@@ -3,8 +3,8 @@ import { MDXProvider } from '@mdx-js/tag'
 import Layout from './layout'
 import Helmet from 'react-helmet'
 
-const BlogPostLayout = ({ children, pathContext }) => {
-  const { title, author, date } = pathContext.frontmatter
+const BlogPostLayout = ({ children, pageContext }) => {
+  const { title, author, date } = pageContext.frontmatter
   return (
     <Layout>
       <Helmet>
